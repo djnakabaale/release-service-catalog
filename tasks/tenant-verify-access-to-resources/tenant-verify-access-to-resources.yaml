@@ -43,6 +43,7 @@ spec:
           CAN_I_CREATE_INTERNALREQUESTS="skipped"
 
           echo ""
+          echo "ORIGIN_NAMESPACE: ${ORIGIN_NAMESPACE}"
           echo "CAN_I_READ_RELEASES? ${CAN_I_READ_RELEASES}"
           echo "CAN_I_READ_RELEASEPLANS? ${CAN_I_READ_RELEASEPLANS}"
           echo "CAN_I_READ_SNAPSHOTS? ${CAN_I_READ_SNAPSHOTS}"
