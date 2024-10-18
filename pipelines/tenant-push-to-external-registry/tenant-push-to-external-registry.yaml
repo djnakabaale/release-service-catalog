@@ -36,7 +36,7 @@ spec:
   workspaces:
     - name: release-workspace
   tasks:
-    - name: verify-access-to-resources
+    - name: tenant-verify-access-to-resources
       taskRef:
         resolver: "git"
         params:
@@ -45,7 +45,7 @@ spec:
           - name: revision
             value: $(params.taskGitRevision)
           - name: pathInRepo
-            value: tasks/verify-access-to-resources/verify-access-to-resources.yaml
+            value: tasks/tenant-verify-access-to-resources/tenant-verify-access-to-resources.yaml
       params:
         - name: release
           value: $(params.release)
@@ -78,7 +78,7 @@ spec:
         - name: data
           workspace: release-workspace
       runAfter:
-        - verify-access-to-resources
+        - tenant-verify-access-to-resources
     - name: reduce-snapshot
       taskRef:
         resolver: "git"
