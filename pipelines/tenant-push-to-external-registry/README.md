@@ -16,13 +16,4 @@ Tekton pipeline to release Snapshots to an external registry.
 
 ## Changes in 0.1 (milestone-5)
 
-* Enterprise Contract task was changed:
-    * Task `prepare-validation` was removed
-    * Task `verify-enterprise-contract` was replaced
-        * old: quay.io/hacbs-release/verify-enterprise-contract:main
-        * new: quay.io/hacbs-release/verify-enterprise-contract-v2:main
-        * Task Parameter `snapshot` was removed
-        * Task parameter `IMAGES` was added
-        * Task Parameter `STRICT` was added
-        * Task Parameter `IMAGE_REF` was removed
-        * Task Parameter `REKOR_HOST` was removed
+* TODO:
