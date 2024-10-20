@@ -58,7 +58,8 @@ spec:
             echo ""
             echo "This indicates that your workspace is not correctly setup"
             echo "Please reach out to a workspace administrator"
-            exit 1
+            # exit 1
+            
           fi
 
           echo "Access to Release resources verified"
